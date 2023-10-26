@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    /* height: 400px; */
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: end;
+
+    /* flex-wrap: wrap; */
+    /* Always is on the main axis */
+    /* flex-direction: column; */
+    /* Always is on the main axis */
+    /* Always is on the cross axis */
+    /* justify-content: space-between; */
+    /* align-items: start; */
+}
+
+/* .flex-container::after {
+    content: '';
+    clear: both;
+    display: block;
+} */
+
+.item {
+    /* flex-basis: 300px; */
+    /* width: 100px; */
+    /* flex-grow: 1; */
+    flex: 1;
+    height: 100px;
+    background: blue;
+    color: white;
+    margin: 10px;
+    /* float: left; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:nth-of-type(1) {
+
+    /* flex-shrink: 1; */
+    /* flex-grow: 1; */
+    /* flex-basis: 200px; */
+    /* order: 1; */
+    /* align-self: start; */
+}
+.item:nth-of-type(2) {
+
+    /* flex-shrink: 2; */
+
+    /* flex-grow: 2; */
+
+    /* flex-basis: 200px; */   
+     /* flex-shrink: 1; */
+
+
+    /* order: 2; */
+
+    /* align-self: center; */
+}
+
+.item:nth-of-type(3) {
+
+    /* flex-shrink: 3; */
+
+    /* flex-grow: 1; */
+
+    /* order: 3; */
+
+    /* align-self: end; */
+}
